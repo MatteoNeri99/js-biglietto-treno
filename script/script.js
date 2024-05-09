@@ -14,7 +14,7 @@ let costoUtente = 0.276;
 
 
 if (etaUtente < 18){
-    let costoUtente =parseFloat (kmUtente / 100 * 21).toFixed(2); 
+    let costoUtente =parseFloat (0.276 / 100 * 21 * kmUtente).toFixed(2); 
 
     document .getElementById("km").innerHTML= "km percorsi dall\'utente: " +  kmUtente;
 
@@ -23,7 +23,7 @@ if (etaUtente < 18){
     document .getElementById("costo").innerHTML= "costo del biglietto: " + costoUtente;
 
 }else if (etaUtente > 65 ){
-    let costoUtente =parseFloat( kmUtente / 100 * 42).toFixed(2); 
+    let costoUtente =parseFloat( 0.276 / 100 * 42 * kmUtente).toFixed(2); 
 
     document .getElementById("km").innerHTML= "km percorsi dall\'utente: " +  kmUtente;
 
@@ -31,7 +31,6 @@ if (etaUtente < 18){
 
     document .getElementById("costo").innerHTML= "costo del biglietto: " + costoUtente;
 
-   
 }else {
     let costoUtente =parseFloat(kmUtente * 0.276).toFixed(2); 
 
@@ -41,6 +40,5 @@ if (etaUtente < 18){
 
     document .getElementById("costo").innerHTML= "costo del biglietto: " + costoUtente;
 
-    
 }
 
